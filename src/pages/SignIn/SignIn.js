@@ -50,7 +50,7 @@ class SignIn extends Component {
             
 
             <div className="FormCenter">
-              <form>
+              <form  onSubmit={this.handleSubmit} className="FormFields" onSubmit={this.handleSubmit}>
                 <h4>We are <span>QUEUP</span></h4>
                 <p>penis information</p>
 
@@ -65,7 +65,7 @@ class SignIn extends Component {
                 </div>
 
                 <div className="SubmitField">
-                  <button className="FormFieldButton">Sign In</button> 
+                  <button className="FormFieldButton">Sign In</button> <Link to="/signup" className="FormFieldLink">Create an account</Link>
                 </div>
               </form>
             </div>
