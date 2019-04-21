@@ -1,26 +1,30 @@
 import React, { Component } from 'react';
-import { HashRouter as Router, Route, Link, NavLink } from 'react-router-dom';
+import { 
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
+import Header from './HeaderComponent/Header';
 import SignIn from './SignIn/SignIn.js';
+import Homepage from './Home/Homepage';
+import Profile from './Profile/Profile';
+import About from './About/About';
 import logo from './logo.svg';
 import './App.css';
 
+// Bridge between react world and the normal client side of the browser
 class App extends Component {
   render() {
     return (
-      <Router basename="/queup/">
-        <div class="topnav">
-          <NavLink to="/signin" activeClassName="active">Sign In</NavLink>
-          <NavLink to="/profile" activeClassName="active">Profile</NavLink>
-          <NavLink to="/about" activeClassName="active">About</NavLink>
-          <NavLink to="/home" activeClassName="active">Home</NavLink>
-        </div>
-
-      
-        <div>
-
+      <Router>
+        <div className="App">
+          <Header />
+          <Route exact path='/' component={Homepage} />
+          <Route exact path='/about' component={About} />
+          <Route exact path='/profile' component={Profile} />
+          <Route exact path='/signin' component={SignIn} />
         </div>
       </Router>
-
     );
   }
 }

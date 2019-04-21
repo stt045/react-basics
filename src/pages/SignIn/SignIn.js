@@ -44,23 +44,32 @@ class SignIn extends Component {
 
   render() {
         return (
-          <div className="FormCenter">
-            <form>
-              <div className="FormField">
-                <label className="FormFieldLabel" htmlFor="email">E-mail Address</label>
-                <input type="email" id="email" className="FormFieldInput" placeholder="Enter your email" name="email" value={this.state.email} onChange={this.handleChange}/>
-              </div>
+          <div className="wrapper">
+          
+            <img src="https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+            
 
-              <div className="FormField">
-                <label className="FormFieldLabel" htmlFor="password">Password</label>
-                <input type="password" id="password" className="FormFieldInput" placeholder="Enter your password" name="password" value={this.state.password} onChange={this.handleChange}/>
-              </div>
+            <div className="FormCenter">
+              <form>
+                <h4>We are <span>QUEUP</span></h4>
+                <p>penis information</p>
 
-              <div className="SubmitField">
-                <button className="FormFieldButton">Sign In</button> 
-              </div>
-            </form>
-          </div>
+                <div className="FormField">
+                  <label className="FormFieldLabel" htmlFor="email">E-mail Address</label>
+                  <input type="email" id="email" className="FormFieldInput" placeholder="Enter your email" name="email" value={this.state.email} onChange={this.handleChange}/>
+                </div>
+
+                <div className="FormField">
+                  <label className="FormFieldLabel" htmlFor="password">Password</label>
+                  <input type="password" id="password" className="FormFieldInput" placeholder="Enter your password" name="password" value={this.state.password} onChange={this.handleChange}/>
+                </div>
+
+                <div className="SubmitField">
+                  <button className="FormFieldButton">Sign In</button> 
+                </div>
+              </form>
+            </div>
+           </div> 
         );
   }
 }
