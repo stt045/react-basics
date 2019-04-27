@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import Header from './HeaderComponent/Header';
 import SignIn from './SignIn/SignIn.js';
+import SignUp from './SignUp/SignUp.js';
 import Homepage from './Home/Homepage';
 import Profile from './Profile/Profile';
 import About from './About/About';
@@ -23,6 +24,7 @@ class App extends Component {
           <Route exact path='/about' component={About} />
           <Route exact path='/profile' component={Profile} />
           <Route exact path='/signin' component={SignIn} />
+          <Route exact path='/signup' component={SignUp} />
         </div>
       </Router>
     );

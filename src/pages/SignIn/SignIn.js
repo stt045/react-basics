@@ -52,7 +52,7 @@ class SignIn extends Component {
             <div className="FormCenter">
               <form  onSubmit={this.handleSubmit} className="FormFields" onSubmit={this.handleSubmit}>
                 <h4>We are <span>QUEUP</span></h4>
-                <p>penis information</p>
+                <p>information</p>
 
                 <div className="FormField">
                   <label className="FormFieldLabel" htmlFor="email">E-mail Address</label>
