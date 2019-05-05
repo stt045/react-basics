@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import {
   Link 
 } from 'react-router-dom';
+import Homepage from '../Home/Homepage';
 
 class Header extends Component {
+
   render() {
     return (
       <header>
-        <div className="logo">
-          LOGO
+        <div className="logo" style={logoStyle}>
+          QueUp
         </div>
 
         <nav>
@@ -31,6 +33,12 @@ class Header extends Component {
       </header>
     );
   }
+}
+
+const logoStyle = {
+  fontSize: '40px',
+  fontWeight: '500',
+  padding: '10px 10px 15px 15px'
 }
 
 export default Header;

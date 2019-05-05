@@ -5,10 +5,12 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 10px;
+  font-size: 15px;
   color: #010000;
   font-weight: 400;
   font-style: normal;
+  overflow: auto;
+  height: 100%;
 }
 
 header {
@@ -20,11 +22,8 @@ header {
   height: 90px;
 }
 
-header .logo {
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  font-size: 20px;
+.container {
+  text-align: center;
 }
 
 nav, nav ul, nav ul li {

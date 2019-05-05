@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-/*import './SignIn.css';*/
 
 class SignUp extends Component {
 
@@ -44,7 +43,7 @@ class SignUp extends Component {
 
   render() {
         return (
-          <div className="wrapper">
+          <div className="card-body">
           
             <img src="https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
             
@@ -53,6 +52,7 @@ class SignUp extends Component {
               <form  onSubmit={this.handleSubmit} className="FormFields" onSubmit={this.handleSubmit}>
                 <h4>We are <span>QUEUP</span></h4>
                 <p>This is the sign up page</p>
+                
 
                 <div className="FormField">
                   <label className="FormFieldLabel" htmlFor="email">E-mail Address</label>

@@ -4,7 +4,8 @@ import {
   Route,
   Link
 } from 'react-router-dom';
-import Header from './HeaderComponent/Header';
+import Header from './Component/Header';
+import Footer from './Component/Footer'
 import SignIn from './SignIn/SignIn.js';
 import SignUp from './SignUp/SignUp.js';
 import Homepage from './Home/Homepage';
@@ -26,6 +27,9 @@ class App extends Component {
           <Route exact path='/signin' component={SignIn} />
           <Route exact path='/signup' component={SignUp} />
         </div>
+        
+
+        <Footer />
       </Router>
     );
   }
